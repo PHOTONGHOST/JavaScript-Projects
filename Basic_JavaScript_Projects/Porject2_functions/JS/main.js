@@ -1,13 +1,13 @@
-// This file's purpose is to demonstrates a simple function with variables and getElementById
+// Project2_functions - main.js
+// This files purpose is to demonstrates a function that uses the += operator,
 
-function combineStrings() {
-    // Our two variables
-    var part1 = "Hello, ";
-    var part2 = "world!";
+/**
+ * This will Append more text to the paragraph each time the button is clicked.
+ */ 
+function appendMessage() {
+  // Grab the element where it will display the message
+  var p = document.getElementById("output");
 
-    // Concatenating the variables into a sentence
-    var sentence = part1 + part2;
-
-    // Output of the sentence into the paragraph with id="output"
-    document.getElementById("output").innerHTML = sentence;
+  // (Each click adds another phrase and a space)
+  p.innerHTML += "Hello, world! ";
 }
