@@ -1,0 +1,87 @@
+/* Container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: 20px auto;
+}
+
+/* Hide slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Image fit */
+.mySlides img {
+  width: 100%;
+  vertical-align: middle;
+  border-radius: 6px;
+}
+
+/* Prev/Next buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background: rgba(0,0,0,0.3);
+  text-decoration: none;
+}
+.next { right: 0; border-radius: 3px 0 0 3px; }
+.prev:hover, .next:hover { background: rgba(0,0,0,0.6); }
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 16px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Dots */
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+.active, .dot:hover { background-color: #717171; }
+
+/* Fade animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 0.8s;
+}
+@keyframes fade {
+  from { opacity: .4 } 
+  to   { opacity: 1 }
+}
+
+/* Countdown text below slideshow */
+.slide-countdown {
+  text-align: center;
+  margin: 8px 0 24px;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: #333;
+}

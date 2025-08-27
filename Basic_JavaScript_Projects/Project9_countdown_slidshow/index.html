@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project 9 — Countdown Timer</title>
+      <link rel="stylesheet" href="./CSS/main.css" />
+</head>
+<body>
+    <h1>Countdown Timer + Slideshow</h1>
+
+    <p>How many seconds would you like to set your alarm for?</p>
+    <input id="seconds" value="" />
+    <button onclick="countdown()">Click here</button>
+    <p id="timer"></p>
+
+     <!-- ===== Slideshow ===== -->
+  <div class="slideshow-container">
+
+    <!-- Slide 1 -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="./images/car1.jpg" alt="Slide 1">
+      <div class="text">Car Number 1</div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="./images/car2.jpg" alt="Slide 2">
+      <div class="text">Car Number 2</div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="./images/car3.jpg" alt="Slide 3">
+      <div class="text">Car Number 3</div>
+    </div>
+
+    <!-- Prev/Next controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <!-- Dots -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <!-- Per-slide countdown readout -->
+  <p class="slide-countdown">
+    Next slide in <span id="slideCountdown">5</span>s
+  </p>
+
+    <!-- Link to JavaScript -->
+    <script src="./JS/main.js"></script>
+</body>
+</html>
