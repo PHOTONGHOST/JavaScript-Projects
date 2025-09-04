@@ -1,0 +1,117 @@
+/* Neon background for the page */
+body {
+  background-color: #0d0d0d; 
+  font-family: 'Orbitron', sans-serif; 
+  color: #e0e0e0; 
+  margin: 0;
+  padding: 0;
+}
+
+/* Title styling */
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  color: #ff0099; 
+  text-align: center;
+  text-shadow: 0 0 10px #ff0099, 0 0 20px #ff00ff; 
+}
+
+/* Subheadings (like Size and Meats) */
+h3 {
+  font-family: 'Share Tech Mono', monospace;
+  color: #00ffe5; /* neon cyan */
+  text-shadow: 0 0 6px #00ffe5, 0 0 12px #00ccff;
+}
+
+/* All divs */
+div {
+  font-family: 'Rajdhani', sans-serif;
+  color: #f0f0f0;
+  background: rgba(30, 30, 30, 0.6); 
+  border: 1px solid #222;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 0 8px rgba(255, 0, 200, 0.5), 0 0 12px rgba(0, 255, 255, 0.5);
+}
+
+/* Container behind the menu */
+#menuBG {
+  width: 600px;
+  height: 470px;
+  margin: 10px auto;
+}
+
+/* Form wrapper */
+#frmMenu {
+  width: 600px;
+  height: 200px;
+}
+#frmMenu::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Price box on the right */
+#totalPrice {
+  width: 200px;
+  height: 190px;
+  margin: 0 auto;
+  float: right;
+}
+
+/* Left column (sizes) */
+.left {
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+
+/* Right column (meats) */
+.right {
+  width: 200px;
+  height: 200px;
+  float: right;
+}
+
+/* Middle column (vegetables) */
+.middle {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+/* Order summary text on the left */
+#showText {
+  width: 400px;
+  height: 190px;
+  margin: 0px auto;
+  float: left;
+}
+
+/* Cart row that holds showText and totalPrice */
+#cart {
+  top: 0;
+  margin: 0px auto;
+  width: 600px;
+  height: 200px;
+}
+
+/* Place Order button */
+#btnOrder {
+  margin: 10px 0px 0px 100px;
+  width: 100px;
+  height: 40px;
+  background-color: #ff0099;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px #ff0099, 0 0 20px #ff00ff;
+  cursor: pointer;
+}
+
+#btnOrder:hover {
+  background-color: #00ffe5;
+  box-shadow: 0 0 10px #00ffe5, 0 0 20px #00ccff;
+}
